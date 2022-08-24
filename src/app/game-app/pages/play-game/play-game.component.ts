@@ -38,10 +38,6 @@ export class PlayGameComponent implements OnInit {
   ngOnInit(): void {
     this.service.userNameObservable$.subscribe(val => {
       this.nameUser = val;
-      this.listUserWinner = ['jero', 'adrian', 'lucho' ]
-      if(val){
-        localStorage.setItem('userName',JSON.stringify(this.listUserWinner));
-      }
     })
   }
 
