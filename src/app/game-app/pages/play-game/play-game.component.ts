@@ -23,7 +23,6 @@ export class PlayGameComponent implements OnInit {
   public calcNumberRandom: number = Math.floor( Math.random()  * this.maxNumber - this.minNumber +1 ) + 1;
   public result: string = '';
   public isNumberCorrect : boolean = false ;
-  public listUserWinner : string [] = [];
   
   userTexts: userTexts = {
     messageNumberMin: `El numero que ingreso es mas bajo`,
