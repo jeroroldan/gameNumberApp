@@ -1,0 +1,10 @@
+<h2>{{ welcomeUserText }}</h2>
+<hr>
+<h3>Ingrese su Nombre: </h3>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Nombre: </mat-label>
+  <input type="email" [(ngModel)]="userName" matInput placeholder="Nombre">
+</mat-form-field>
+<h3>{{ textPush }}</h3>
+<button mat-raised-button color="primary" type="submit" (click)="sendNameUser()" [disabled]="validationNameUser" routerLink="/game" >{{ startText }}</button>
+
